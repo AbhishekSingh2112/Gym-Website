@@ -1,0 +1,25 @@
+/** @jsx jsx */
+import { jsx, css } from "@emotion/core";
+import React from "react";
+
+const GymSubtitle = () => (
+  <p css={styles}>
+    Fitness Solutions in Hooghly(West Bengal) is one of the leading businesses in the Gyms.{" "}
+    <br />
+    Fitness Solutions in Chinsurah has a wide range of products and / or services to cater to the varied requirements of their customers.
+  </p>
+);
+
+const styles = css`
+  color: #7a7a7a;
+  font-size: 15px;
+  line-height: 1.7;
+  @media (max-width: 700px) {
+    padding: 0 40px;
+    br {
+      display: none;
+    }
+  }
+`;
+
+export default GymSubtitle;
