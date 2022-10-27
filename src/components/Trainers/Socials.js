@@ -4,10 +4,10 @@ import React from "react";
 
 const Socials = () => (
   <div css={styles} className="socials">
-    <i className="fab fa-facebook-f"></i>
-    <i className="fab fa-twitter"></i>
-    <i className="fab fa-linkedin-in"></i>
-    
+    <a href="https://www.facebook.com/groups/424007314313685"  target = "_blank" > 
+    <i className="fab fa-facebook-f"></i></a>
+    <a href="https://wa.me/919088451572"  target = "_blank" >
+    <i className="fab fa-whatsapp"></i></a>
   </div>
 );
 
