@@ -7,9 +7,12 @@ import ContactBg from "../Image/contactBg.jpg";
 const Form = ({ text }) => (
   <div css={styles} className="formContainer">
     <form>
-      <input type="text" placeholder="Your Name*" />
-      <input type="text" placeholder="Your Email*" />
-      <input type="text" placeholder="Subject" />
+      <input type="text" placeholder="Your Name*" 
+         pattern="[a-z0-9._%+-]+\.[a-z]{3,}$" />
+      <input type="email" placeholder="Email*" 
+         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+      <input type="text" placeholder="Subject*" 
+         pattern="[a-z0-9._%+-]+\.[a-z]{5,}$" />
       <textarea cols="30" rows="10" placeholder="Message"></textarea>
       <Button text="SEND MESSAGE" />
     </form>
